@@ -31,4 +31,7 @@ hs_err_pid*
 *.iml
 out
 gen
-
+*.classpath
+*.project
+*.eml
+*.userlibraries
