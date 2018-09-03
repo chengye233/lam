@@ -1,0 +1,41 @@
+.container-small{
+	max-width: 500px;
+}
+
+h1, h2, h3{
+	text-align: center;
+}
+
+.a-right{
+	float: right;
+}
+
+.card-title img{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.side-bar-card{
+	background: rgba(0, 0, 0, .05);
+	margin-top: 15px;
+	padding: 10px 15px;
+}
+
+.side-bar-card .card-body:hover{
+	background-color: rgba(0, 0, 0, .05);
+}
+
+
+.side-bar-card .card-body{
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 18px ;
+	font-weight: bold;
+}
+
+img, .side-bar-card{
+	border-radius:3px ;
+}
+

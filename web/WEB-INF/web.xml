@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>controller.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>controller.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookTypeServlet</servlet-name>
+        <servlet-class>controller.servlet.BookTypeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BooksServlet</servlet-name>
+        <servlet-class>controller.servlet.BooksServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>controller.servlet.BookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <servlet-class>controller.servlet.UserInfoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserBookServlet</servlet-name>
+        <servlet-class>controller.servlet.UserBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BorrowBooksServlet</servlet-name>
+        <servlet-class>controller.servlet.BorrowBooks</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RenewBooksServlet</servlet-name>
+        <servlet-class>controller.servlet.RenewBooksServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BackBooksServlet</servlet-name>
+        <servlet-class>controller.servlet.BackBooksServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/user/registerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookTypeServlet</servlet-name>
+        <url-pattern>/bm/btServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BooksServlet</servlet-name>
+        <url-pattern>/bm/bsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/bm/bkServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <url-pattern>/sm/uiServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserBookServlet</servlet-name>
+        <url-pattern>/user/ubServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BackBooksServlet</servlet-name>
+        <url-pattern>/user/backBooksServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BorrowBooksServlet</servlet-name>
+        <url-pattern>/user/BorrowBooksServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RenewBooksServlet</servlet-name>
+        <url-pattern>/user/renewBooksServlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
